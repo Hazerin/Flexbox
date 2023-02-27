@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    border: 4px solid lime;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    justify-content: center; /* margin: 0 auto in row è una soluzione alternativa */
+}
+
+.row {
+    width: 100%; /* per rendere responsive la pagina, quasi mai va hard-codato un valore di default */
+    max-width: 600px; /* evita che gli elementi si allunghino oltre una tot soglia, deformandosi su schermi grandi */
+    margin: 0 auto; /* imposta il margin in modo che sia centrato, con 0 di distanza dal centro */
+}
+
+.title {
+    border: 2px solid blue;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 24px;
+}
+
+.box {
+    border: 4px solid lightgray;
+    width: 30%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
